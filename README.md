@@ -24,7 +24,7 @@ Screenshots, promotional materials, and engagement posts related to this project
 # License
 ## Code
 The website’s source code is distributed under the MIT License.
-See the ./LICENSE file for more details.
+See the [Virtual-Museum-Group-Three /LICENSE](https://github.com/Kobsk1/Virtual-Museum-Group-Three/blob/e7027f1e97071ef0a935b056ce7cf2ae95c1667c/LICENSE) file for more details.
 
 ## Content License
 
@@ -34,7 +34,7 @@ Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0) li
 You may share or adapt this content for educational and non-commercial use,
 as long as proper credit is given to Group #3 and the original sources.
 
-🔗 Read the full CC BY-NC 4.0 license
+🔗 [Read the full CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
 
 # References
 * (Reference #1)
