@@ -24,7 +24,7 @@ Screenshots, promotional materials, and engagement posts related to this project
 # License
 ## Code
 The website’s source code is distributed under the MIT License.
-See the LICENSE file for more details.
+See the ./LICENSE file for more details.
 
 ## Content License
 
