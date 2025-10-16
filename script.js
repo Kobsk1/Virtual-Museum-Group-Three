@@ -1,4 +1,4 @@
-// Add smooth scroll behavior
+// From down to up small transition
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add parallax effect to hero content
+// Parallax para cool
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroContent = document.querySelector('.hero-content');
