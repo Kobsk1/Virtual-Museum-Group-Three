@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Virtual Museum: Napoleon Abueva</title>
+    <link rel="stylesheet" href="gallery-style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Virtual Museum: Napoleon Abueva</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#biography">Biography</a>
+            <a href="#awards">Awards</a>
+            <a href="#social">Social Media</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <div class="gallery-hero">
+        <h1>GALLERY HALL</h1>
+        <p>Explore the sculptures</p>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="artwork-card" onclick="openModal(0)">
+            <img src="https://ccp-wagtail-bucket.s3.amazonaws.com/images/V_WORKS_Kaganapan_1.width-3000.jpg" alt="Kaganapan" class="artwork-image">
+            <div class="artwork-title">Kaganapan</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(1)">
+            <img src="https://images.squarespace-cdn.com/content/v1/508da03be4b0d28844ddf21c/1525871090899-CPLC72G3GTCXIDP0LXJO/Himlayang-Pilipino.jpg?format=2500w" alt="Transfiguration" class="artwork-image">
+            <div class="artwork-title">Transfiguration</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(2)">
+            <img src="https://media.mutualart.com/Images/2015_11/26/06/060951652/a4a2ab48-6847-493e-81d5-b7d21d66cd9f_570.Jpeg" alt="Kiss of Judas" class="artwork-image">
+            <div class="artwork-title">Kiss of Judas</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(3)">
+            <img src="https://assets.isu.pub/document-structure/220626143954-13e4e5afab7407253a7cd908e0969479/v1/31d2538bebda294957ea000cf0f53cd3.jpeg?width=720&quality=85%2C50" alt="Fredesvinda" class="artwork-image">
+            <div class="artwork-title">Fredesvinda</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(4)">
+            <img src="https://cdn.forevervacation.com/uploads/attraction/blood-pact-shrine-3603.jpg" alt="Sandugo Monument" class="artwork-image">
+            <div class="artwork-title">Sandugo Monument</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(5)">
+            <img src="https://sculptour.wordpress.com/wp-content/uploads/2015/01/mg_9557.jpg" alt="The Crucifix with Double Corpora" class="artwork-image">
+            <div class="artwork-title">The Crucifix with Double Corpora</div>
+        </div>
+
+        <div class="artwork-card" onclick="openModal(6)">
+            <img src="https://lakansining.wordpress.com/wp-content/uploads/2018/02/05a-1955-napoleon-abueva-sermon-on-the-mount-altar-up-chapel-of-the-holy-sacrifice.jpg" alt="Altar of Parish of the Holy Sacrifice" class="artwork-image">
+            <div class="artwork-title">Altar of Parish of the Holy Sacrifice</div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="artworkModal">
+        <button class="close-modal" onclick="closeModal()">×</button>
+        <div class="modal-content">
+            <div class="modal-image-section">
+                <img src="" alt="" class="modal-image" id="modalImage">
+            </div>
+            <div class="modal-info-section">
+                <h2 id="modalTitle"></h2>
+                <div class="modal-year" id="modalYear"></div>
+                <p class="modal-description" id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2025 Group #3 - Art Appreciation Project</footer>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>
