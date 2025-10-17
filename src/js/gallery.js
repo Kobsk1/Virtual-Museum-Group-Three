@@ -39,9 +39,12 @@ As the skeleton of a ship, it symbolizes ASEAN unity and cooperation.`
     },
     {
         title: "Sandugo Monument", // Blood compact monument (placeholder)
-        year: "", // Date not specified yet
+        year: "1965", // Date not specified yet
         image: "https://cdn.forevervacation.com/uploads/attraction/blood-pact-shrine-3603.jpg", 
-        description: "" // Description to be added later
+        description: `The Sandugo (Blood Compact) Monument portrays 5 life-sized bronze statues of men gathered around a table and toasting drinks with Legazpi and Sikatuna.  
+        Made by National Artist Napoleon Abueva, it's an artwork that represents the first international treaty between the Philippines and Spain. 
+        The spot where it stands holds historical significance, as it is where Miguel Lopez de Legaspi and Rajah Sikatuna performed a blood compact on March 16, 1565. 
+        This gesture symbolizes peace and friendship between the natives of Bohol and the foreigners. ` 
     },
     {
         title: "The Crucifix with Double Corpora", 

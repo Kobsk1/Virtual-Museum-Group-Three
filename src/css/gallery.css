@@ -95,6 +95,7 @@ nav a:hover::after {
     letter-spacing: 6px; /* Wide spacing between letters */
     margin-bottom: 1rem; /* Space below title */
     text-transform: uppercase; /* All capital letters */
+    animation: fadeIn 1s ease-out; /* Match biography title fade-in */
 }
 
 /* Subtitle in hero section */
@@ -102,6 +103,7 @@ nav a:hover::after {
     font-size: 1.5rem; /* Large text */
     color: #b8860b; /* Gold color */
     font-style: italic; /* Italic text */
+    animation: fadeIn 1s ease-out; /* Match biography title fade-in */
 }
 
 /* ========================================
@@ -132,7 +134,7 @@ nav a:hover::after {
 /* Card hover effect - lift up and glow */
 .artwork-card:hover {
     transform: translateY(-10px); /* Move up 10 pixels */
-    box-shadow: 0 15px 40px rgba(184, 134, 11, 0.4); /* Gold glow shadow */
+    box-shadow: 0 15px 40px rgba(216, 179, 78, 0.4); /* Gold glow shadow */
     border-color: #ffd700; /* Change border to brighter gold */
 }
 
