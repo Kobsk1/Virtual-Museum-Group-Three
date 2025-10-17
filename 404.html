@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <meta http-equiv="refresh" content="0; url=/src/html/index.html">
+    <script>
+        // Redirect unknown routes to the main index in src/html
+        const path = window.location.pathname.split('/').pop().toLowerCase();
+        const pageMap = {
+            '': 'index.html',
+            'index.html': 'index.html',
+            'gallery.html': 'gallery.html',
+            'biography.html': 'biography.html',
+            'awards.html': 'awards.html'
+        };
+        const target = pageMap[path] || 'index.html';
+        window.location.replace(`/src/html/${target}`);
+    </script>
+</head>
+<body>
+    <p>Redirecting… If nothing happens, <a href="/src/html/index.html">go to the home page</a>.</p>
+</body>
+</html>
+
