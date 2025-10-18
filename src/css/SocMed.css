@@ -1,0 +1,297 @@
+/* ========================================
+   RESET STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   BODY STYLES
+   ======================================== */
+body {
+    font-family: 'Georgia', serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #b8860b;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   SOCIAL CONTAINER
+   ======================================== */
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 3rem 3rem;
+    flex: 1;
+    text-align: center;
+}
+
+/* ========================================
+   SOCIAL HEADER
+   ======================================== */
+.social-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.social-header h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out;
+}
+
+.social-header p {
+    font-size: 1.3rem;
+    color: #b8860b;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-line {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #b8860b, transparent);
+    margin: 2rem auto;
+}
+
+/* ========================================
+   SOCIAL GRID
+   ======================================== */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+/* ========================================
+   SOCIAL CARD
+   ======================================== */
+.social-card {
+    background: #1a1a1a;
+    border: 2px solid #b8860b;
+    padding: 3rem 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(216, 179, 78, 0.4);
+    border-color: #ffd700;
+    color: white;
+}
+
+.social-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+    transform: scale(1.2);
+}
+
+.social-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.social-handle {
+    font-size: 1.2rem;
+    color: #b8860b;
+    font-style: italic;
+}
+
+/* Platform-specific colors on hover */
+.facebook:hover {
+    background: rgba(59, 89, 152, 0.1);
+    border-color: #3b5998;
+}
+
+.instagram:hover {
+    background: rgba(225, 48, 108, 0.1);
+    border-color: #e1306c;
+}
+
+.twitter:hover {
+    background: rgba(29, 161, 242, 0.1);
+    border-color: #1da1f2;
+}
+
+.youtube:hover {
+    background: rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+}
+
+/* ========================================
+   FOOTER LINE
+   ======================================== */
+.footer-line {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #b8860b, transparent);
+    margin: 0 auto;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid rgba(184, 134, 11, 0.3);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: auto;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet View */
+@media (max-width: 968px) {
+    .social-header h1 {
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .social-container {
+        padding: 100px 1.5rem 2rem;
+    }
+
+    .social-header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .social-icon {
+        font-size: 3rem;
+    }
+
+    .social-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.social-card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
