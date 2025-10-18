@@ -104,6 +104,8 @@ function closeModal() {
     modal.classList.remove('active');
     // Re-enable background scrolling
     document.body.style.overflow = 'auto';
+    // Stop any playing artwork audio when modal is closed
+    stopArtworkAudio();
 }
 
 // ========================================
