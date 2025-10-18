@@ -36,6 +36,11 @@
          GALLERY GRID - Artwork display area
          ======================================== -->
     <div class="gallery-grid">
+        <div class="artwork-card" onclick=""> <!-- Invisible card to test trigger audio on click -->
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCvAmkMNhfO-qrwdbcLWIr6qQZjwKrRiVpPQ&s" class="artwork-image"> <!-- Dummy image -->
+            <div class="artwork-title">JAKOB PLS AYAAW KO NA WEB DESIGN PLSSS</div> <!-- Artwork title overlay -->
+        </div>
+
         <!-- Artwork Card 1: Kaganapan -->
         <div class="artwork-card" onclick="openModal(0)"> <!-- Click to open modal with artwork 0 -->
             <img src="https://ccp-wagtail-bucket.s3.amazonaws.com/images/V_WORKS_Kaganapan_1.width-3000.jpg" alt="Kaganapan" class="artwork-image"> <!-- Artwork image -->
@@ -106,5 +111,6 @@
          JAVASCRIPT - Interactive functionality
          ======================================== -->
     <script src="../js/gallery.js"></script> <!-- Link to JavaScript file -->
+    <script src="../js/gallery-audio.js"></script> <!-- Link to JavaScript file for audio -->
 </body>
 </html>
