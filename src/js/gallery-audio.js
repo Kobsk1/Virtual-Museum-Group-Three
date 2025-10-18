@@ -5,19 +5,19 @@
 // Each artwork audio object contains: audio file path
 
 const artworkAudios = [
-        "kaganapan.m4a" // Audio file name  
+        "kaganapan.mp3" // Audio file name  
     ,
-        "transfiguration.m4a"
+        "transfiguration.mp3"
     ,
-        "kiss_of_judas.m4a"
+        "kiss_of_judas.mp3"
     ,
-        "fredesvinda.m4a"
+        "fredesvinda.mp3"
     ,
-        "sandugo_monument.m4a"
+        "sandugo_monument.mp3"
     ,
-        "the_crucifix_with_double_corpora.m4a"
+        "the_crucifix_with_double_corpora.mp3"
     ,
-        "altar_of_parish_of_the_holy_sacrifice.m4a"
+        "altar_of_parish_of_the_holy_sacrifice.mp3"
 
 ]
 
