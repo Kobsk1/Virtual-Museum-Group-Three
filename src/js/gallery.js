@@ -42,8 +42,8 @@ As the skeleton of a ship, it symbolizes ASEAN unity and cooperation.`,
         source: "https://seartists.weebly.com/philippines/fredesvinda"
     },
     {
-        title: "Sandugo Monument", // Blood compact monument (placeholder)
-        year: "1965", // Date not specified yet
+        title: "Sandugo Monument", 
+        year: "1965", 
         image: "https://cdn.forevervacation.com/uploads/attraction/blood-pact-shrine-3603.jpg", 
         description: `The Sandugo (Blood Compact) Monument portrays 5 life-sized bronze statues of men gathered around a table and toasting drinks with Legazpi and Sikatuna.  
         It's an artwork that represents the first international treaty between the Philippines and Spain. 
@@ -88,7 +88,16 @@ function openModal(index) {
     document.getElementById('modalTitle').textContent = artwork.title; // Set the title
     document.getElementById('modalYear').textContent = artwork.year || 'Date not specified'; // Set year or placeholder
     document.getElementById('modalDescription').textContent = artwork.description || 'Description coming soon...'; // Set description or placeholder
-    // document.getElementById('modalSource').href = artwork.source; // Set the source link
+    
+    // Set up source link
+    const sourceElement = document.getElementById('modalSource');
+    if (artwork.source) {
+        sourceElement.href = artwork.source;
+        sourceElement.textContent = artwork.source;
+        sourceElement.parentElement.style.display = 'block';
+    } else {
+        sourceElement.parentElement.style.display = 'none';
+    }
 
     // Show the modal by adding the 'active' class
     modal.classList.add('active');
