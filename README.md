@@ -6,20 +6,24 @@ Created by Group #3 as part of our Art Appreciation midterm project.
 # About the Project
 This Virtual Museum highlights the life, legacy, and masterpieces of National Artist Napoleon Abueva.
 It features some of his most iconic works, including:
-* (Artwork)
-* (Artwork)
-* So on
+* Kaganapan
+* Transfiguration
+* Kiss of Judas
+and more...
 
 
 
 # Group Members
-* (Name) - (Role)
+* Tristan - Project Lead
+* Jakob - Designer/Web Developer
+* Jel - Designer/Editor
+* Bryan - Designer/Editor
+* Jerhom - Researcher
+* Matt - Researcher
 
 # Visit the website
-(website link)
+[(website link)](https://kobsk1.github.io/Virtual-Museum-Group-Three/)
 
-# Social Media
-Screenshots, promotional materials, and engagement posts related to this project can be found in the /social-media folder.
 
 # License
 ## Code
@@ -36,7 +40,5 @@ as long as proper credit is given to Group #3 and the original sources.
 
 🔗 [Read the full CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
 
-# References
-* (Reference #1)
 
 © 2025 Group #3 — Virtual Museum Project
